@@ -39,6 +39,7 @@ class Rectangode:
         if the length of the content is smaller than xxx,
         we need to padding it.
         """
+        # haha
         pass
         
         
