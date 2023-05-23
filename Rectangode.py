@@ -87,7 +87,7 @@ class Rectangode:
                 self.code[8*(self.col-9) + (self.row-14) * (self.col):])
             part1.resize((8, (self.col-9)))
             part2.resize(((self.row-14), self.col))
-            part3.resize((6, self.col-6))
+            part3.resize((6, self.col-6), refcheck=False)
 
             temp1 = np.concatenate((L_POS, error_code), axis=1)
             temp2 = np.concatenate((temp1, part1), axis=1)
@@ -95,6 +95,7 @@ class Rectangode:
             temp4 = np.concatenate((part3, S_POS), axis=1)
             self.bits = np.concatenate((temp3, temp4), axis=0)
             self.bits.resize((self.row*self.col,))
+            print(self.bits)
 
     def make(self, output: str = './output.png') -> None:
         img = Image.new('1', (self.col, self.row))
