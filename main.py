@@ -7,6 +7,3 @@ r = Rectangode(s, 30, 20)
 r.calculating(k=28)
 r.make()
 
-
-p = np.array(Image.open("output.png").getdata())
-print(p)

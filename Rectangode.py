@@ -101,8 +101,11 @@ class Rectangode:
         img = Image.new('1', (self.col, self.row))
         img.putdata(self.bits)
         img.save(output)
-
-
+    def open(path):
+        img = Image.open("output.png")
+        bits = np.array(img.getdata())
+        bits[bits==255] = 1
+        size = img.size()
 if __name__ == '__main__':
     s = "I'm Chen Ke."
     r = Rectangode(s)
