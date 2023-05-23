@@ -1,11 +1,9 @@
-'''
-class: Rectangode
-    def get: convert string to Rectangode class
-    def make: generate an image from the class
-'''
-import Rectangode
+from Rectangode import Rectangode
 
-s = '我是cheng ke，我来自SJTU。'
+s = "My name's Chen Ke. I'm from SJTU."
 r = Rectangode(s)
-r.calculating()
+r = Rectangode(s, 30, 20)
+r.calculating(k=28)
 r.make()
+
+
