@@ -115,11 +115,11 @@ class Rectangode:
         img.putdata(self.bits)
         img.save(output)
 
-    def open_img(self, path: str = './output.png') -> tuple[np.array, int]:
+    def open_img(self, path: str = './output.png') -> None:
         with Image.open(path) as img:
             self.bits = np.array(img).astype(int)
 
-    def converting(self):
+    def converting(self) -> str:
         print(self.bits)
         while not np.array_equal(self.bits[:8, :8], L_POS) or not np.array_equal(self.bits[-6:, -6:], S_POS):
             self.bits = np.rot90(self.bits)
@@ -150,7 +150,6 @@ class Rectangode:
 
 
 if __name__ == '__main__':
-    s = "I'm Chen Ke."
     r = Rectangode()
     r.open_img()
     print(r.converting())
