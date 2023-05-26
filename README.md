@@ -6,6 +6,6 @@ This is the final project for Information Theory(ICE2601) course of Shanghai Jia
 The lecturer of this course is Fan Cheng.
 # Role
 
-Xinwei Zhu(朱鑫炜): ID:521030910019 Rectangode部分的代码实现以及论文撰写，Conclusion部分的论文撰写。
+Xinwei Zhu(朱鑫炜): ID:521030910025 Rectangode部分的代码实现以及论文撰写，Conclusion部分的论文撰写。
 
 Ke Chen(陈可)：ID:521030910019 Introduction部分的论文撰写,Related Work和Reed-Solomon部分的信息论原理研究以及论文撰写，Slides制作。
